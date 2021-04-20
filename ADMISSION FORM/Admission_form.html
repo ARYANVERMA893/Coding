@@ -1,0 +1,81 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+   
+    <form action="" >
+        
+        
+        <h1 style="color: chocolate;"><i>Admission form</i></h1>
+        <p><small> <mark>Filled are followed by *</small></mark></p>
+        <P><small> <mark>we never call you for OTP</mark></small></P>
+        <h2>PERSONAL INFORMATION</h2>
+        <p>NAME:* <input type ="text" name= "name" required></p>
+        <div class="image-upload-wrap"></div>
+        <input class="file-upload-input" type="file" onchange="readURL(this);" accept="image/*"/>
+        <div class="file-upload-content">
+          
+            <img class="file-upload-content" src="" alt="Profile Photo*" />
+            <div class="image-title-wrap">
+                </div>
+            </div>
+        </div>
+        <p>
+            <fieldset>
+                <legend id="padding">Gender *</legend>
+            Male <input type ="radio"name="gender"id="Male"required>
+            Female <input type ="radio"name="gender"id  ="Female"required>
+       
+        </p>
+       
+
+    </fieldset>
+    <hr>
+    <h2 >QULIFICATION*</h2>
+    
+    <h5>Class 10th</h5> 
+    <input type="file" multiple required id="cursor">
+    <h5>Class 12th</h5>
+    <input type="file">
+    <hr>
+    <H2>CONTACT INFORMATION*</H2>
+    <p>Address:*<textarea name="address" id="address" cols="150" rows="10"required></textarea>
+        
+
+           <p>Email:*<input type="email"id = "email"required></p>
+           <p>Pincode:* <input type ="number" name="pincode"id ="pincode"required></p>
+
+    </p>
+    <P>Contact number:*<input type="number" name ="number"id  
+         ="number"required></P>
+        <hr>
+        <h3>D.O.B</h3>
+        <p>Date Of Birth:<input type="date" name="number" id="number"></p>
+    <hr>
+        <h2>Payment Information</h2>
+        <p>Card Type:*
+            <select name ="card_typa" id ="card_type"required>
+                <option value="">--Select a Card Type--</option>
+                <option value="visa">visa</option>
+                <option value="mastercard">mastercard</option>
+                <option value="RuPay">RuPay</option>
+            </select>
+            <p>card number:*<input type="card_number"id="card_number"required>
+                
+            </p>
+            <p>Expriation Date:*<input type="date" name="date"id="date"required></p>
+            
+          <p>CVV* <input type="password" name="cvv"id="cvv"required></p>
+        <input type="submit"value="PAY NOW">
+
+    </form>
+</body>
+</html>
